@@ -5,6 +5,8 @@ export const site = {
   memberNumber: "5037621",
   language: "es",
   title: "Elisandra Barzaga | RINGANA Ambassador",
+  url: "https://elisandra-ringana.vercel.app/",
+  socialImage: "/opengraph-image.png",
   description: "Conoce RINGANA junto a Elisandra Barzaga y descubre cómo comenzar, conocer los productos y registrarte de forma sencilla.",
   registrationUrl: "https://www.ringana.us/neuer-kunde/?lang=en",
   whatsappUrl: "https://wa.me/17865318510",

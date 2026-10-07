@@ -9,7 +9,7 @@
   --border: #e9e7e1;
   --accent: #64745a;
 }
-@theme inline {
+ inline {
   --color-background: var(--background);
   --color-surface: var(--surface);
   --color-foreground: var(--text);
