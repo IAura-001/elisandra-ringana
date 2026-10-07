@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Elisandra Barzaga landing page
 
-## Getting Started
+Spanish informational presentation for Elisandra Barzaga as a RINGANA Ambassador. This is a personal presentation, not the official RINGANA corporate website.
 
-First, run the development server:
+## Local development
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- `npm run dev`: start the development server.
+- `npm run lint`: run ESLint.
+- `npm run build`: create the production build.
+- `npm start`: serve the production build.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Centralized configuration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`content/site.ts` contains identity, metadata, member number, contact URLs, and presentation image paths. `content/landing.ts` contains section copy, footer links, starter-kit prices and points, and wellness product configuration.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Production data and remaining inputs
 
-## Learn More
+- Registration and WhatsApp URLs are confirmed in `content/site.ts`. All registration and contact CTAs use that configuration and open safely in a new tab. The member number also has one centralized source.
+- The personal portrait asset is not supplied. The approved lifestyle image is displayed through the existing safe fallback mechanism.
+- Wellness prices remain null and hidden. Display requires a verified current US price and `confirmed-current-us` status.
 
-To learn more about Next.js, take a look at the following resources:
+## Assets and navigation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+HQ kit and wellness product images are active. Original uploads are organized in `public/images/references/source-uploads/`; earlier references and crops are retained for traceability and are not rendered as alternative product art. Crop mappings are documented in `public/images/products/references/README.md`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Footer links resolve to `inicio`, `ringana`, `elisandra`, `como-empezar`, `opciones`, and `productos`. Native anchor scrolling respects the existing reduced-motion preference. The final member reminder reads the same centralized member number as the registration instructions.
